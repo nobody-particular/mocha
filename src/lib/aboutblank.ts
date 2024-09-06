@@ -21,5 +21,5 @@ export function openAbWindow(src: string, redirect = true) {
   iframe.src = src
   tab.document.body.appendChild(iframe)
 
-  if (redirect) window.location.replace('https://classroom.google.com/h')
+  if (redirect) window.location.replace('https://www.gutenberg.org/cache/epub/97/pg97-images.html')
 }

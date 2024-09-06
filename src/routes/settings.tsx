@@ -11,15 +11,15 @@ import { exportData, importData, resetData } from '../lib/browsingdata'
 import { handleTransport } from '../lib/transport'
 
 export default function Settings() {
-  const [tabName, setTabName] = createSignal('')
-  const [tabIcon, setTabIcon] = createSignal('')
+  const [tabName, setTabName] = createSignal('The Project Gutenberg eBook of Flatland, by Edwin A. Abbott')
+  const [tabIcon, setTabIcon] = createSignal('https://www.gutenberg.org/cache/epub/97/images/cover.jpg')
 
-  const [panicKey, setPanicKey] = createSignal('')
-  const [panicUrl, setPanicUrl] = createSignal('https://classroom.google.com/h')
+  const [panicKey, setPanicKey] = createSignal('`')
+  const [panicUrl, setPanicUrl] = createSignal('https://www.gutenberg.org/cache/epub/97/pg97-images.html')
 
   const [aboutBlank, setAboutBlank] = createSignal('disabled')
 
-  const [theme, setTheme] = createSignal('forest')
+  const [theme, setTheme] = createSignal('bumblebee')
 
   const [debug, setDebug] = createSignal('disabled')
 
@@ -187,12 +187,12 @@ export default function Settings() {
         <button
           class="btn btn-error px-16"
           onClick={() => {
-            setTabIcon('')
-            setTabName('')
-            setPanicKey('')
-            setPanicUrl('https://classroom.google.com/h')
+            setTabIcon('https://www.gutenberg.org/cache/epub/97/images/cover.jpg')
+            setTabName('The Project Gutenberg eBook of Flatland, by Edwin A. Abbott')
+            setPanicKey('`')
+            setPanicUrl('https://www.gutenberg.org/cache/epub/97/pg97-images.html')
             setAboutBlank('disabled')
-            setTheme('forest')
+            setTheme('bumblebee')
             save()
           }}
         >

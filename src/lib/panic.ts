@@ -6,5 +6,5 @@ export function handlePanicKey(e: KeyboardEvent) {
   if (!panicData.key) return
   if (e.key !== panicData.key) return
 
-  window.location.replace(panicData.url || 'https://classroom.google.com/h')
+  window.location.replace(panicData.url || 'https://www.gutenberg.org/cache/epub/97/pg97-images.html://classroom.google.com/h')
 }
